@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DigitalFoods">
         <activity
-            android:name=".PratoDetailActivity"
+            android:name=".DetalheItem.PratoDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".RestauranteMenu"
+            android:name=".Menu.RestauranteMenu"
             android:exported="false" />
         <activity
-            android:name=".RestaurantesActivity"
+            android:name=".Restaurantes.RestaurantesActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Login.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

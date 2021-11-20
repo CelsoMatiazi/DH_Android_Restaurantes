@@ -1,4 +1,4 @@
-package com.example.digitalfoods
+package com.example.digitalfoods.Login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.view.isVisible
+import com.example.digitalfoods.R
+import com.example.digitalfoods.Restaurantes.RestaurantesActivity
 
 class MainActivity : AppCompatActivity() {
 

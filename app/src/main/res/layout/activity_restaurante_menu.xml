@@ -5,7 +5,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".RestauranteMenu"
+    tools:context=".Menu.RestauranteMenu"
     android:orientation="vertical"
     android:fillViewport="true"
     android:layout_width="match_parent"

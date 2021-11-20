@@ -1,4 +1,7 @@
-package com.example.digitalfoods
+package com.example.digitalfoods.Model
+
+import com.example.digitalfoods.DataModel
+import com.example.digitalfoods.MenuModel
 
 class MockDataClass {
 
@@ -266,7 +269,7 @@ class MockDataClass {
     )
 
 
-    fun getRestaurant(index: Int): DataModel{
+    fun getRestaurant(index: Int): DataModel {
 
         var data: DataModel = dataList[0]
 

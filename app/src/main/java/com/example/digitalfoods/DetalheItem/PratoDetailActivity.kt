@@ -1,9 +1,10 @@
-package com.example.digitalfoods
+package com.example.digitalfoods.DetalheItem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.digitalfoods.R
 import com.squareup.picasso.Picasso
 
 class PratoDetailActivity : AppCompatActivity() {

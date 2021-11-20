@@ -1,4 +1,4 @@
-package com.example.digitalfoods
+package com.example.digitalfoods.Menu
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.digitalfoods.MenuModel
+import com.example.digitalfoods.R
 import com.squareup.picasso.Picasso
 
 class MenuAdapter(
@@ -13,12 +15,12 @@ class MenuAdapter(
     val clickListener: (prato: Map<String, String> ) -> Unit):
     RecyclerView.Adapter<MenuAdapter.MenuViewHolder>()  {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuAdapter.MenuViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
         var view = LayoutInflater.from(parent.context).inflate(R.layout.menu_layout, parent, false)
         return MenuViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: MenuAdapter.MenuViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         Picasso.get()
             .load(menuList[position].img)
             .placeholder(R.drawable.ic_launcher_background)
