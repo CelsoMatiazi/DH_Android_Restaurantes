@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PratoDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/teal_700"
+        >
+
+        <ImageView
+            android:id="@+id/detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/detail_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salada com molho de Gengibre"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@id/detail_img"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/detail_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_baseline_back" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/detail_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="kfgsdkfjskdf fksdjfksjdfkjsf ksdjkfsdkfj"
+        android:textColor="@color/grey"
+        android:padding="15dp"
+        />
+
+</LinearLayout>

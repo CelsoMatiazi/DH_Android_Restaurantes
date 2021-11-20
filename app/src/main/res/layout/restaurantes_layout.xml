@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+    >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/restauranteImg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/teal_700"
+                android:scaleType="centerCrop"
+
+            />
+
+            <TextView
+                android:id="@+id/restauranteNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tony Roma's"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+            />
+
+            <TextView
+                android:id="@+id/restauranteEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Av Pacaembu 717 - Pacaembu, São Paulo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/greyLight"
+                />
+
+            <TextView
+                android:id="@+id/restauranteHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fehca às 3:00"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/greyLight"
+                />
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
