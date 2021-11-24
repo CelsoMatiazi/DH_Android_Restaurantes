@@ -1,4 +1,4 @@
-package com.example.digitalfoods.Menu
+package com.example.digitalfoods.menu
 
 import android.view.LayoutInflater
 import android.view.View

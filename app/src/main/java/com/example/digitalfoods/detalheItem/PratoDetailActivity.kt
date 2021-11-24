@@ -1,4 +1,4 @@
-package com.example.digitalfoods.DetalheItem
+package com.example.digitalfoods.detalheItem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,13 +1,13 @@
-package com.example.digitalfoods.Restaurantes
+package com.example.digitalfoods.restaurantes
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.digitalfoods.Model.MockDataClass
+import com.example.digitalfoods.model.MockDataClass
 import com.example.digitalfoods.R
-import com.example.digitalfoods.Menu.RestauranteMenu
+import com.example.digitalfoods.menu.RestauranteMenu
 
 class RestaurantesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

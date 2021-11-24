@@ -1,4 +1,4 @@
-package com.example.digitalfoods.Login
+package com.example.digitalfoods.login
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.view.isVisible
 import com.example.digitalfoods.R
-import com.example.digitalfoods.Restaurantes.RestaurantesActivity
+import com.example.digitalfoods.restaurantes.RestaurantesActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,6 +39,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.elevation = 0F;
 
         nomeTV = findViewById(R.id.nomeTag)
         nomeET = findViewById(R.id.editTextNome)

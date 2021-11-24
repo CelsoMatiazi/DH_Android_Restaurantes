@@ -1,4 +1,4 @@
-package com.example.digitalfoods.Menu
+package com.example.digitalfoods.menu
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.digitalfoods.*
-import com.example.digitalfoods.DetalheItem.PratoDetailActivity
-import com.example.digitalfoods.Model.MockDataClass
+import com.example.digitalfoods.detalheItem.PratoDetailActivity
+import com.example.digitalfoods.model.MockDataClass
 import com.squareup.picasso.Picasso
 
 

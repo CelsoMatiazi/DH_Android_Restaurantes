@@ -1,4 +1,4 @@
-package com.example.digitalfoods.Model
+package com.example.digitalfoods.model
 
 import com.example.digitalfoods.DataModel
 import com.example.digitalfoods.MenuModel

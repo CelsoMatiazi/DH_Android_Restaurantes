@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_vertical"
-    android:padding="20dp"
+    android:padding="30dp"
     android:orientation="vertical"
-    android:background="@color/green"
-    tools:context=".Login.MainActivity">
+    android:background="@color/greenDark"
+    tools:context=".login.MainActivity">
 
 
     <androidx.cardview.widget.CardView
@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
         android:elevation="8dp"
+        app:cardElevation="10dp"
         >
 
         <LinearLayout
