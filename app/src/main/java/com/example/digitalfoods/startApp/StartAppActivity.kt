@@ -23,23 +23,23 @@ class StartAppActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_app)
 
+        //viewPager.isUserInputEnabled = false
+
         setupViewPager()
+        listeningButton()
 
     }
-
 
 
     private fun setupViewPager(){
 
         val listFragments = listOf(
-            SampleFreagment1(),
-            SampleFreagment2(),
-            SampleFreagment3(),
+            SampleFragment1(),
+            SampleFragment2(),
+            SampleFragment3(),
         )
 
-
         viewPager.adapter = IntroAdapter(this, listFragments)
-
         TabLayoutMediator(indicator, viewPager){ _, _ -> }.attach()
 
         viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
@@ -47,10 +47,13 @@ class StartAppActivity : AppCompatActivity() {
                 super.onPageSelected(position)
             }
         })
+    }
 
-        var nextPage: Boolean = false
+
+    var nextPage: Boolean = false
+    fun listeningButton(){
+
         buttonNext.setOnClickListener{
-
             viewPager.currentItem = viewPager.currentItem + 1
 
             if(nextPage){
@@ -62,10 +65,7 @@ class StartAppActivity : AppCompatActivity() {
                 buttonNext.text = "Entendi"
                 nextPage = true
             }
-
-
         }
-
     }
 
 
