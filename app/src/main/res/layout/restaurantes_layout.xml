@@ -28,7 +28,7 @@
                 android:layout_height="200dp"
                 android:background="@color/teal_700"
                 android:scaleType="centerCrop"
-
+                android:transitionName="@string/restauranteImageTrans"
             />
 
             <TextView

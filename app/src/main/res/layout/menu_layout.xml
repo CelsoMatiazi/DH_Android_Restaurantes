@@ -20,8 +20,9 @@
                 android:id="@+id/menu_img"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:background="@color/teal_700"
+
                 android:scaleType="centerCrop"
+                android:transitionName="@string/transition2"
                 />
 
             <TextView

@@ -1,8 +1,10 @@
 package com.example.digitalfoods.menu
 
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
@@ -38,7 +40,19 @@ class RestauranteMenu : AppCompatActivity() {
             intent.putExtra("nome", it["nome"])
             intent.putExtra("img", it["img"])
             intent.putExtra("descricao", it["descricao"])
-            startActivity(intent)
+
+
+            val sharedView: View = recyclerViewMenu
+            val transitionName = getString(R.string.transition2)
+
+            val transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                this,
+                sharedView,
+                transitionName
+            )
+            startActivity(intent, transitionActivityOptions.toBundle())
+
+            //startActivity(intent)
         }
         recyclerViewMenu.layoutManager = GridLayoutManager(this,2, GridLayoutManager.VERTICAL, false)
 

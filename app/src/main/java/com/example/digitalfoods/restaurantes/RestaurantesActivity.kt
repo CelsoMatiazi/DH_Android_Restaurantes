@@ -9,6 +9,10 @@ import com.example.digitalfoods.model.MockDataClass
 import com.example.digitalfoods.R
 import com.example.digitalfoods.menu.RestauranteMenu
 
+import android.app.ActivityOptions
+import android.view.View
+
+
 class RestaurantesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +25,18 @@ class RestaurantesActivity : AppCompatActivity() {
         recyclerViewFeed.adapter = RestaurantesAdpter(data.dataList) {
             val intent = Intent(this, RestauranteMenu::class.java)
             intent.putExtra("id", it)
-            startActivity(intent)
+
+            val sharedView: View = recyclerViewFeed
+            val transitionName = getString(R.string.restauranteImageTrans)
+
+            val transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
+                this,
+                sharedView,
+                transitionName
+            )
+            startActivity(intent, transitionActivityOptions.toBundle())
+            //startActivity(intent)
+
         }
         recyclerViewFeed.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 

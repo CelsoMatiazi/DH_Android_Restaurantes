@@ -10,13 +10,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/teal_700"
+
         >
 
         <ImageView
             android:id="@+id/detail_img"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:transitionName="@string/transition2" />
 
         <TextView
             android:id="@+id/detail_nome"
@@ -52,6 +53,7 @@
         android:text="kfgsdkfjskdf fksdjfksjdfkjsf ksdjkfsdkfj"
         android:textColor="@color/grey"
         android:padding="15dp"
+
         />
 
 </LinearLayout>
