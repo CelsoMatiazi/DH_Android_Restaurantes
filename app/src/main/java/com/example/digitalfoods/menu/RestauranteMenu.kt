@@ -37,12 +37,12 @@ class RestauranteMenu : AppCompatActivity() {
 
         recyclerViewMenu.adapter = MenuAdapter(itemData.menu){
             val intent = Intent(this, PratoDetailActivity::class.java)
-            intent.putExtra("nome", it["nome"])
-            intent.putExtra("img", it["img"])
-            intent.putExtra("descricao", it["descricao"])
+            intent.putExtra("nome", it["nome"].toString())
+            intent.putExtra("img", it["img"].toString())
+            intent.putExtra("descricao", it["descricao"].toString())
 
 
-            val sharedView: View = recyclerViewMenu
+            val sharedView: View = it["view"] as View
             val transitionName = getString(R.string.transition2)
 
             val transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(
@@ -52,8 +52,9 @@ class RestauranteMenu : AppCompatActivity() {
             )
             startActivity(intent, transitionActivityOptions.toBundle())
 
-            //startActivity(intent)
         }
+
+
         recyclerViewMenu.layoutManager = GridLayoutManager(this,2, GridLayoutManager.VERTICAL, false)
 
 
@@ -64,7 +65,7 @@ class RestauranteMenu : AppCompatActivity() {
             .into(imgRest)
 
         backRest.setOnClickListener {
-            this.finish()
+            this.onBackPressed()
         }
     }
 }

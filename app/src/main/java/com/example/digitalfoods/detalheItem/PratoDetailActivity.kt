@@ -31,7 +31,7 @@ class PratoDetailActivity : AppCompatActivity() {
             .into(imgPrato)
 
         backPrato.setOnClickListener {
-            this.finish()
+            this.onBackPressed()
         }
     }
 
