@@ -24,34 +24,33 @@ class MenuAdapter(
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         Picasso.get()
             .load(menuList[position].img)
-            .placeholder(R.drawable.ic_launcher_background)
+            .placeholder(R.color.greyLight2)
             .into((holder.image))
 
         holder.nome.text = menuList[position].prato
+        holder.preco.text = menuList[position].preco
 
         holder.itemView.setOnClickListener{
             val data : MutableMap<String, Any> = mutableMapOf()
             val rootView = it.findViewById<View>(R.id.card_prato)
 
-            data.put("nome", menuList[position].prato)
-            data.put("img", menuList[position].img)
-            data.put("descricao", menuList[position].descricao)
-            data.put("view", rootView)
-
-
+            data["nome"] = menuList[position].prato
+            data["img"] = menuList[position].img
+            data["descricao"] = menuList[position].descricao
+            data["preco"] = menuList[position].preco
+            data["view"] = rootView
 
             clickListener.invoke(data)
         }
 
     }
 
-
-
     override fun getItemCount(): Int = menuList.size
 
     inner class MenuViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var image : ImageView = itemView.findViewById(R.id.menu_img)
         var nome : TextView = itemView.findViewById(R.id.menu_nome)
+        var preco : TextView = itemView.findViewById(R.id.menu_price)
 
     }
 }

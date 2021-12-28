@@ -15,10 +15,10 @@ import com.example.digitalfoods.model.MockDataClass
 import com.squareup.picasso.Picasso
 
 
-class RestauranteMenu : AppCompatActivity() {
+class RestauranteMenu : AppCompatActivity(R.layout.activity_restaurante_menu) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_restaurante_menu)
+        //setContentView(R.layout.activity_restaurante_menu)
 
         this.supportActionBar?.hide()
 

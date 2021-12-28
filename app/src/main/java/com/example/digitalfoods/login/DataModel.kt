@@ -13,5 +13,6 @@ class DataModel(
 class MenuModel(
     val img: String,
     val prato: String,
-    val descricao: String
+    val descricao: String,
+    val preco: String
 )
